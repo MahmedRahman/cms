@@ -1,0 +1,766 @@
+{
+    "info": {
+        "name": "Laravel API",
+        "_postman_id": "66449095755ce",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "CsrfCookieController",
+            "item": [
+                {
+                    "name": "sanctum\/csrf-cookie",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/sanctum\/csrf-cookie",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "sanctum",
+                                "csrf-cookie"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "HealthCheckController",
+            "item": [
+                {
+                    "name": "_ignition\/health-check",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/_ignition\/health-check",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "_ignition",
+                                "health-check"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ExecuteSolutionController",
+            "item": [
+                {
+                    "name": "_ignition\/execute-solution",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/_ignition\/execute-solution",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "_ignition",
+                                "execute-solution"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "UpdateConfigController",
+            "item": [
+                {
+                    "name": "_ignition\/update-config",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/_ignition\/update-config",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "_ignition",
+                                "update-config"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "BlogController",
+            "item": [
+                {
+                    "name": "api\/blogs",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/blogs",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "blogs"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blogs",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/blogs",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "blogs"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blogs\/{blog}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/blogs\/{blog}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "blogs",
+                                "{blog}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blogs\/{blog}",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/blogs\/{blog}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "blogs",
+                                "{blog}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blogs\/{blog}",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/blogs\/{blog}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "blogs",
+                                "{blog}"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "FeedbackController",
+            "item": [
+                {
+                    "name": "api\/feedback",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/feedback",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "feedback"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/feedback",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/feedback",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "feedback"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/feedback\/{feedback}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/feedback\/{feedback}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "feedback",
+                                "{feedback}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/feedback\/{feedback}",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/feedback\/{feedback}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "feedback",
+                                "{feedback}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/feedback\/{feedback}",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/feedback\/{feedback}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "feedback",
+                                "{feedback}"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GalleryController",
+            "item": [
+                {
+                    "name": "api\/galleries",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/galleries",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "galleries"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/galleries",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/galleries",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "galleries"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/galleries\/{gallery}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/galleries\/{gallery}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "galleries",
+                                "{gallery}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/galleries\/{gallery}",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/galleries\/{gallery}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "galleries",
+                                "{gallery}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/galleries\/{gallery}",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/galleries\/{gallery}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "galleries",
+                                "{gallery}"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ProfileController",
+            "item": [
+                {
+                    "name": "api\/profiles",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/profiles",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "profiles"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/profiles",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/profiles",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "profiles"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/profiles\/{profile}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/profiles\/{profile}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "profiles",
+                                "{profile}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/profiles\/{profile}",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/profiles\/{profile}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "profiles",
+                                "{profile}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/profiles\/{profile}",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/profiles\/{profile}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "profiles",
+                                "{profile}"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SettingController",
+            "item": [
+                {
+                    "name": "api\/settings",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/settings",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "settings"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/settings",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/settings",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "settings"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/settings\/{setting}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/settings\/{setting}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "settings",
+                                "{setting}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/settings\/{setting}",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/settings\/{setting}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "settings",
+                                "{setting}"
+                            ]
+                        },
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/settings\/{setting}",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": [],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/settings\/{setting}",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "settings",
+                                "{setting}"
+                            ]
+                        },
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}
