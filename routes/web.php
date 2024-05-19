@@ -7,17 +7,26 @@ use App\Models\Feedback;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request; // Make sure this is the correct Request class
 
-Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
-Route::get('/create', [BlogController::class, 'create'])->name('blog.create');
-
-Route::delete('/blog', [BlogController::class, 'destroy'])->name('blog.destroy');
 
 
 
-Route::post('/blog', [BlogController::class, 'dashBoardIndex'])->name('dashboard.blog.delete');
-Route::post('/create', [BlogController::class, 'store'])->name('blog.store');
+Route::prefix('admin')->group(function () {
 
-Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blog.show');
+});
+Route::resource('blog', BlogController::class);
+Route::get('/blog/{id}/edit', [BlogController::class, 'edit'])->name('blog.edit');
+
+Route::prefix('web')->group(function () {
+
+});
+
+
+#Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+#Route::get('/create', [BlogController::class, 'create'])->name('blog.create');
+#Route::delete('/blog', [BlogController::class, 'destroy'])->name('blog.destroy');
+#Route::post('/blog', [BlogController::class, 'dashBoardIndex'])->name('dashboard.blog.delete');
+#Route::post('/create', [BlogController::class, 'store'])->name('blog.store');
+#Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blog.show');
 
 
 Route::get('/', function () {

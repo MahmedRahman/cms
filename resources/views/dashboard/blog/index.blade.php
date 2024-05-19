@@ -25,6 +25,8 @@
 <!-- breadcrumb -->
 @endsection
 @section('content')
+
+
 <!-- row -->
 <div class="card">
     <div class="card-header">
@@ -49,9 +51,14 @@
                         <td>{{ $blog->author }}</td>
                         <td> 
 
-                            <a href="#">
-                                Delete
-                            </a>
+                            <a href="{{ route('blog.edit', $blog->id) }}" class="btn btn-warning">Edit</a>
+
+                            <form action="{{ route('blog.destroy', $blog->id) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                            </form>
+            
                         </td>
                     </tr>
                 @endforeach

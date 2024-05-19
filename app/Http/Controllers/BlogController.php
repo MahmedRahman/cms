@@ -55,34 +55,39 @@ class BlogController extends Controller
     }
 
 
+    public function edit($id)
+    {
+        $blog = Blog::findOrFail($id);
+        return view('dashboard.blog.edit', compact('blog'));
+    }
     // Update the specified resource in storage.
+   
     public function update(Request $request, $id)
     {
-        $blog = Blog::find($id);
-
-        if (!$blog) {
-            return response()->json(['message' => 'Not found'], 404);
-        }
-
-        $validator = Validator::make($request->all(), [
-            // 'name' => 'required|string|max:255',
-            // Add validation rules
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'content' => 'required|string',
+            'author' => 'required|string|max:255',
         ]);
 
-        if ($validator->fails()) {
-            return response()->json($validator->errors(), 400);
-        }
-
-        $blog->update($request->all());
-        return new BlogResource($blog);
+        $blog = Blog::findOrFail($id);
+        $blog->title = $request->title;
+        $blog->content = $request->content;
+        $blog->author = $request->author;
+        $blog->save();
+        $blogs = Blog::all();
+        return view('dashboard.blog.index' ,  compact('blogs'))->with('success', 'Blog updated successfully');
     }
 
     // Remove the specified resource from storage.
     public function destroy($id)
     {
         $blog = Blog::find($id);
+     
         $blog->delete();
+        
         $blogs = Blog::all();
+
         return view('dashboard.blog.index' ,  compact('blogs'));
        
     }
